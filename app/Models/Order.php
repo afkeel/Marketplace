@@ -23,7 +23,7 @@ class Order extends Model
         return $this->belongsTo(Status::class);
     }
 
-    public function product(): BelongsToMany
+    public function products(): BelongsToMany
     {
         return $this->belongsToMany(Product::class);
     }

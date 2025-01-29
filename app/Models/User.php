@@ -12,7 +12,7 @@ class User extends Model
 
     protected $guarded = [];
 
-    public function order(): HasMany
+    public function orders(): HasMany
     {
         return $this->hasMany(Order::class);
     }
