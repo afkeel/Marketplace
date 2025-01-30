@@ -21,7 +21,7 @@ return new class extends Migration
                 ->constrained() 
                 ->onUpdate('restrict')
                 ->onDelete('cascade');
-            $table->unsignedInteger('number')->unique();
+            $table->unsignedInteger('uuid')->unique();
             $table->dateTime('order_date');
             $table->timestamps();
 
