@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('/catalog', [ProductController::class, 'index']);
 Route::post('/create-order', [OrderController::class, 'store']);
+Route::patch('/approve-order/{id}', [OrderController::class, 'update']);
